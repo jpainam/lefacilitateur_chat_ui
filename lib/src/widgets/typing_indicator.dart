@@ -269,7 +269,8 @@ class TypingWidget extends StatelessWidget {
 
   /// Handler for multi user typing text.
   String _multiUserTextBuilder(List<types.User> author) {
-    if (author.isEmpty) {
+    return '';
+    /*if (author.isEmpty) {
       return '';
     } else if (author.length == 1) {
       return '${author.first.firstName} is typing';
@@ -277,7 +278,7 @@ class TypingWidget extends StatelessWidget {
       return '${author.first.firstName} and ${author[1].firstName}';
     } else {
       return '${author.first.firstName} and ${author.length - 1} others';
-    }
+    }*/
   }
 
   /// Used to specify width of stacking avatars based on number of authors.
